@@ -41,6 +41,7 @@ function validarCorreo(input){
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
+// ===========  PUNTO 3 ==============================
 /**
  * el objeto modelo es una variable global y sus propiedades podrán ser cambiadas desde la consola.
  */
@@ -55,6 +56,7 @@ var modelo=new Proxy({
     set: cambiarPropiedadAModelo
 });
 
+// ===========  PUNTO 5 ==============================
 /**
  * Cambia el valor de una propiedad en un Objeto y realiza cambios al DOM dependiendo de la propiedad cambiada.
  * @param {Object} obj Objeto al que se le realizará el cambio
@@ -75,7 +77,9 @@ function cambiarPropiedadAModelo(obj,prop, value){
     }
 
 }
-
+/**
+ * PUNTO 4
+ */
 $(document).ready(function(){
     $("form#punto3to6").find("input, textarea, select").on('change keyup', function(){
         if(this.type!="checkbox"){
