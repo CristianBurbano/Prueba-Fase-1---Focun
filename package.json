@@ -1,0 +1,29 @@
+{
+  "name": "prueba-fase-1---focun",
+  "version": "1.0.0",
+  "description": "Prueba Fase 1",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.5.1"
+
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.6"
+  },
+  "scripts": {
+    "doc": "npx jsdoc -c jsdocConf.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CristianBurbano/Prueba-Fase-1---Focun.git"
+  },
+  "keywords": [
+    "Focun"
+  ],
+  "author": "Cristian Burbano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CristianBurbano/Prueba-Fase-1---Focun/issues"
+  },
+  "homepage": "https://github.com/CristianBurbano/Prueba-Fase-1---Focun#readme"
+}

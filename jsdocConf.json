@@ -1,0 +1,8 @@
+{
+    "source":{
+        "include": ["./scripts/index.js"]
+    },
+    "opts":{
+        "destination": "./docs"
+    }
+}
