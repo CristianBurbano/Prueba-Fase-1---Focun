@@ -21,7 +21,7 @@ function toggleFormGroup(inputID){
  * Ejecuta la validación de la entrada de tipo correo y modifica el DOM.
  */   
 function ejecutarValidacionCorreo(){
-    let input=$(this);
+    let input=$("#nombre");
     if(validarCorreo(input)){ //llamado de la función.
     input.addClass("is-valid");
     input.removeClass("is-invalid");
@@ -37,7 +37,7 @@ function ejecutarValidacionCorreo(){
  * @returns {boolean} retorna un valor booleano: true si el correo es valido y false si no es valido
  */
 function validarCorreo(input){
-    var value=input.val();
+    var value=$(input).val();
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
@@ -57,9 +57,9 @@ var modelo=new Proxy({
 
 /**
  * Cambia el valor de una propiedad en un Objeto y realiza cambios al DOM dependiendo de la propiedad cambiada.
- * @param {*} obj Objeto al que se le realizará el cambio
- * @param {*} prop Propiedad que será cambiada en el objeto
- * @param {*} value Valor que se le asignará a la propiedad
+ * @param {Object} obj Objeto al que se le realizará el cambio
+ * @param {string} prop Propiedad que será cambiada en el objeto
+ * @param {any} value Valor que se le asignará a la propiedad
  */
 function cambiarPropiedadAModelo(obj,prop, value){
     obj[prop]= value;
